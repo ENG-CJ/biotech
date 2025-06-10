@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\other systems\\biomedical_pos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\js\\utikls.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:js\\utikls.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\api\\roles_api.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:api\\roles_api.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\api\\helpers\\apiutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:api\\helpers\\apiutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\api\\helpers\\apirespnse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:api\\helpers\\apirespnse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|d:\\other systems\\biomedical_pos\\api\\helpers\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23ADDFED-2D91-4F41-978C-608E6EDF989B}|biomedical_pos.csproj|solutionrelative:api\\helpers\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.aspx",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\index.aspx",
+              "RelativeDocumentMoniker": "index.aspx",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\index.aspx",
+              "RelativeToolTip": "index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-05T19:11:35.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MasterPage.Master",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\MasterPage.Master",
+              "RelativeDocumentMoniker": "MasterPage.Master",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\MasterPage.Master",
+              "RelativeToolTip": "MasterPage.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-05T19:10:40.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "utikls.js",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\js\\utikls.js",
+              "RelativeDocumentMoniker": "js\\utikls.js",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\js\\utikls.js",
+              "RelativeToolTip": "js\\utikls.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T19:09:20.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-05T17:34:02.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "roles_api.asmx.cs",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\Api\\roles_api.asmx.cs",
+              "RelativeDocumentMoniker": "Api\\roles_api.asmx.cs",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\Api\\roles_api.asmx.cs",
+              "RelativeToolTip": "Api\\roles_api.asmx.cs",
+              "ViewState": "AgIAADkAAADgMjMzMzMtwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:33:44.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiUtil.cs",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\Api\\helpers\\ApiUtil.cs",
+              "RelativeDocumentMoniker": "Api\\helpers\\ApiUtil.cs",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\Api\\helpers\\ApiUtil.cs",
+              "RelativeToolTip": "Api\\helpers\\ApiUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:32:49.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiRespnse.cs",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\Api\\helpers\\ApiRespnse.cs",
+              "RelativeDocumentMoniker": "Api\\helpers\\ApiRespnse.cs",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\Api\\helpers\\ApiRespnse.cs",
+              "RelativeToolTip": "Api\\helpers\\ApiRespnse.cs",
+              "ViewState": "AgIAAC4AAABAMzMzMzMTwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:31:59.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DB.cs",
+              "DocumentMoniker": "D:\\other systems\\biomedical_pos\\Api\\helpers\\DB.cs",
+              "RelativeDocumentMoniker": "Api\\helpers\\DB.cs",
+              "ToolTip": "D:\\other systems\\biomedical_pos\\Api\\helpers\\DB.cs",
+              "RelativeToolTip": "Api\\helpers\\DB.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:30:50.277Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
