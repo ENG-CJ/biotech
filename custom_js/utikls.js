@@ -44,8 +44,7 @@ function deleteItem(table, id, callback = null) {
   
 }
 
-
-function loadSelectOptions(selectId, config) {
+function loadSelectOptions(selectId, config, onExtra = null) {
     const {
         tableName,
         valueColumn,
@@ -69,13 +68,33 @@ function loadSelectOptions(selectId, config) {
 
         const data = res.Data;
         let html = "";
+        const extraList = [];
+
         data.forEach(item => {
             html += `<option value="${item.Value}">${item.Text}</option>`;
+
+            if (item.Extra) {
+                extraList.push({
+                    itemId: item.Value,
+                    ...item.Extra
+                });
+            }
         });
 
         $select.html(html);
+
+        // ✅ Store globally
+        window._dropdownExtras = window._dropdownExtras || {};
+        window._dropdownExtras[selectId] = extraList;
+
+        if (typeof onExtra === "function" && extraList.length) {
+            onExtra(extraList);
+        }
     });
 }
+
+
+
 
 
 function showToast(message, type = "info", duration = 3000, position = "right", gravity = "top") {

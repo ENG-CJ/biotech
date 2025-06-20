@@ -1,6 +1,7 @@
 ﻿using biomedical_pos.Api.helpers;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -21,6 +22,28 @@ public class general : System.Web.Services.WebService
 
         //Uncomment the following line if using designed components 
         //InitializeComponent(); 
+    }
+    public static void IncrementStoreStock(int productId, decimal quantity, string note = "UPDATED FROM PRODUCT CREATION")
+    {
+        try
+        {
+            using (SqlConnection con = DB.GetOpenConnection())
+            {
+                using (SqlCommand cmd = new SqlCommand("sp_IncrementProductStock", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@ProductId", productId);
+                    cmd.Parameters.AddWithValue("@Quantity", quantity);
+                    cmd.Parameters.AddWithValue("@Note", (object)note ?? DBNull.Value);;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            // You can log the exception or rethrow
+           
+        }
     }
 
     [WebMethod]
@@ -82,6 +105,17 @@ public class general : System.Web.Services.WebService
         {
             List<object> items = new List<object>();
 
+            string pureTable = tableName;
+            string[] extraCols = null;
+
+            // Check for extra keyword in tableName (e.g., Products|extra=Price,Cost)
+            if (tableName.Contains("|extra="))
+            {
+                var parts = tableName.Split(new[] { "|extra=" }, StringSplitOptions.None);
+                pureTable = parts[0];
+                extraCols = parts[1].Split(',');
+            }
+
             if (!string.IsNullOrWhiteSpace(defaultText))
             {
                 items.Add(new { Value = "0", Text = defaultText });
@@ -89,17 +123,40 @@ public class general : System.Web.Services.WebService
 
             using (SqlConnection con = DB.GetOpenConnection())
             {
-                string sql = $"SELECT [{valueColumn}] AS Value, [{textColumn}] AS Text FROM [{tableName}]  ORDER BY [{textColumn}] ASC";
+                string selectClause = $"[{valueColumn}] AS Value, [{textColumn}] AS Text";
+                if (extraCols != null)
+                {
+                    foreach (var col in extraCols)
+                    {
+                        selectClause += $", [{col.Trim()}]";
+                    }
+                }
+
+                string sql = $"SELECT {selectClause} FROM [{pureTable}] ORDER BY [{textColumn}] ASC";
+
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 using (SqlDataReader rdr = cmd.ExecuteReader())
                 {
                     while (rdr.Read())
                     {
-                        items.Add(new
+                        var row = new Dictionary<string, object>
                         {
-                            Value = rdr["Value"].ToString(),
-                            Text = rdr["Text"].ToString()
-                        });
+                            ["Value"] = rdr["Value"].ToString(),
+                            ["Text"] = rdr["Text"].ToString()
+                        };
+
+                        if (extraCols != null)
+                        {
+                            var extra = new Dictionary<string, object>();
+                            foreach (var col in extraCols)
+                            {
+                                string clean = col.Trim();
+                                extra[clean] = rdr[clean];
+                            }
+                            row["Extra"] = extra;
+                        }
+
+                        items.Add(row);
                     }
                 }
             }
@@ -111,6 +168,7 @@ public class general : System.Web.Services.WebService
             return ApiUtil.Error("Failed to load dropdown data", ex.Message);
         }
     }
+
 
 
 }
